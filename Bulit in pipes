@@ -1,0 +1,34 @@
+Bulit in pipes
+   1.lowercase
+   2.uppercase
+   3.percent
+   4.currency
+   5.date
+   6.json
+Bulit in pipes are used in templates
+
+//in template
+1. <div> {{lowercaseexample | lowercase}} <div>
+ // in component
+ lowercaseexample="KAVIN"
+// output displayed in lower case
+ 
+ 2. //to display in uppercase
+div> {{lowercaseexample | uppercase}} <div>
+
+3. date
+//in component html 
+<div> {{dateExample | date}} </div>
+
+//in ts file
+dateExample=Date.now();
+
+4. json
+//in component.ts
+jsonExample = {
+    user:"kkk",
+    major: "phy",
+    dept: "phy-dept",
+}
+//in component.html
+<div> {{jsonExample | json}} </div>

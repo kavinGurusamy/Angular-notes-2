@@ -1,0 +1,20 @@
+1.pipes can accept 1 or more parameters
+
+2.bulitin pipes accepts parameters
+//in component.html
+<div> {{currencyExample | currency : 'USA'}} </div>
+display the currency with dollar sign
+<div> {{dateExample | date : 'MMM-dd-yy'}} </div>
+displays:NOV 25 2021
+  -currency
+  -date
+    -'MMM-dd-yyyy'
+    -short
+    -long
+   -percentage
+     -displays how many numbers displayed before and after zero
+    <div> {{percentageExample | precent: '3.1-1'}} </div>
+     (<beforedecimal><afterdecimal><maximum_to_display>)
+
+3.syntax for writing parameter pipes
+ {{<data_inputs> | <pipe_name> : <parameter>}}
